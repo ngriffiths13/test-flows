@@ -1,0 +1,26 @@
+definitions:
+    work_pools:
+
+
+        docker-pool: &docker-pool
+            name: docker-pool
+            work_queue_name: default
+            job_variables:
+                image: ""
+
+
+
+
+deployments:
+- name: my_"test_flows"_deployment
+  version: 1
+  tags: []
+  description: Put your deployment description here
+  schedule: {}
+  # The entrypoint is the path to the flow function.
+  # The format is <path_to_flow_file>:<flow_function_name>
+  # This is just an example
+  entrypoint: "test_flows"/"test_flows"_flow.py:"test_flows"_flow
+  parameters: {}
+
+  work_pool: *docker-pool

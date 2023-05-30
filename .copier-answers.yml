@@ -1,0 +1,16 @@
+# Changes here will be overwritten by Copier
+_commit: v0.1.0
+_src_path: https://github.com/ngriffiths13/prefect-poetry-setup.git
+author: Nelson Griffiths
+author_email: nelsongriffiths123@gmail.com
+ci_cd_pipelines: Github Actions
+deployment_infrastructure: Docker
+docker_registry: nelsongriff
+docker_registry_type: DockerHub
+github_repo: ngriffiths13/test-flows
+include_precommit: true
+package_name: test_flows
+project_description: Some test flows
+project_name: test-flows
+storage_type: Github
+

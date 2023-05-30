@@ -9,9 +9,9 @@ prefect-version: 2.10.11
 build:
 - prefect_docker.projects.steps.build_docker_image:
     requires: prefect-docker>=0.2.0
-    image_name: my-repo/my-image
-    tag: my-tag
-    dockerfile: auto
+    image_name: nelsongriff/test-flows
+    tag: latest
+    dockerfile: Dockerfile
     push: true
 
 push: null

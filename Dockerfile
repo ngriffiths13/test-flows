@@ -14,7 +14,7 @@ COPY README.md .
 ### poetry export -o requirements.txt --without-hashes
 ### RUN pip install -r requirements.txt
 ###
-COPY {{ package_name }} ./{{ package_name }}
+COPY test_flows ./test_flows
 RUN poetry install
 
 FROM python:3.10.7-slim-buster

@@ -27,7 +27,7 @@ jobs:
       - uses: ./.github/actions/setup-python-poetry
       - uses: docker/login-action@v2
         with:
-        username: ${{ secrets.DOCKERHUB_USERNAME }}
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - uses: PrefectHQ/actions-prefect-auth@v1
         with:
